@@ -1,30 +1,23 @@
-# An Analysis of Election Audit
+# An Analysis of Oahu Weather
 
 ## Overview of Project
-    This project is used to determine the election winner by tallying the total votes across multiple different counties to determine the overall winner.
+    This project is used to determine the temperature trends of Oahu for June and December.
 ### Purpose
-    The purpose is to determine which candidate won the election based on counting all the votes cast that are stored in a csv file. The votes are total together to determine who won the election and how many votes each candidate received. As well as which counties casted the most votes and what percentage of votes came from which county.
+    The purpose is to determine whether the temperature year round is good enough to sustain a surf and ice cream shop for Oahu. The data is retrieved from a SQLite datafile and the statistics for the months of June and December is analyzed to determine how well the temperature is year round.
 
 ## Results
-    Various election outcomes will be addressed here, and a picture from the text file with the results produced will accompany it. The results are located in election_analysis.txt in the analysis folder.
-### How many votes were cast in this congressional election:
-    A total of 369,711 votes were cast and tallied for this election.
+    The different temperature results will be addressed here, and a picture of the summary statistics will accompany it where helpful. The results are located in the Resources folder.
+### The Decemeber data doesn't exist yet for the year of 2017, leading to less data points then the June data with only 1517 for December compared to June's 1700.
     
-![](/Resources/election_results_1.png)
-### How many votes were cast cast in each county, and which county had the most votes:
-    The most votes came with Denver with 306,055 votes taking up 82.8% of total votes, followed by Jefferson with 38,855 votes at 10.5%, with Arapahoe with 24,801 votes making up 6.7% of total votes.
-    
-![](/Resources/election_results_2.png)
-![](/Resources/election_results_3.png)
-### How many votes did each candidate receive, and which candidate won the election:
-    The candidate Diana Degette won the election with 272,892 votes receiving 73.8% of the total votes. Charles Casper Stockham got second place with 85,213 votes receiving 23.0% of the total votes. Raymon Anthony Doane finished third in the election with 11,606 votes, receiving 3.1% of the total votes.
-    
-![](/Resources/election_results_4.png)
-![](/Resources/election_results_5.png)
-## Summary
-    The analysis was effective at providing the results for this election and can be modified to be used for any election.
-### 1.Expanding the code to analyze multiple election audits:
-    Currently the code can only analyze one file containing votes that must be pre entered into the code itself. The code can be changed to take user input on which files to run the analysis for and output the results for multiple files over and over again until prompted by the user to stop.
-### 2.Take into account of political parties:
-    To bulid onto the last proposed change, if the files also contained the political parties the candidates were assoicated with. The winning party for each county can also be determined, and in the case with multiple files the parties could be tracked from file to file to determine the overall winning party that won the most counties.
+![](/Resources/Dec.png)
+![](/Resources/June.png)
+### Looking at the pictures above, the minimum temperature for June is 64 degress which should be warm enough. With 75% of temperatures being 73 or above with a overall average of nearly 75 degress June seems more than warm enough which not being too hot with a max temperature of 85 degrees.
 
+### Looking at the pictures above, the minimum temperature for Decemeber is only 56 degress which might be a bit too cold for that day. However with 75% of temperatures being 69 or above with a overall average of 71 degress December seems warm enough for the majority of days to be sustainable.
+    
+## Summary
+    The analysis was effective at showing the shop should be sustainable year round by looking at the temperature history of Oahu for June and Decemeber. However there are more queries that could give a more accurate result.
+### 1.Looking at the data for other months:
+    Currently the data is only gathered for June and December, which we assumed to be the hottest and coldest months but that could be wrong. Expanding the query to look at the temperature data for other months could return hotter or colder temperatures which the shop might not be viable during that month.
+### 2.See how much it rains in Oahu:
+    The SQLite contains data on how much it rains, having too much rain could cause the shop to not be viable as people are less likely to go to the beach on rainly days. Looking at the data for this could show how many days has heavy enough rains to turn away customers and see if this number is too high to have a sustainable shop year round.
